@@ -1,0 +1,66 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-Portfolio-7de19f34-6311-4a26-a6dd-1422906133e5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.12" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.12">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Img\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Img\background.jpg" />
+    <None Include="wwwroot\Img\background2.jpg" />
+    <None Include="wwwroot\Img\background3.jpg" />
+    <None Include="wwwroot\Img\dollar.png" />
+    <None Include="wwwroot\Img\etd_ability.png" />
+    <None Include="wwwroot\Img\etd_gameplay.png" />
+    <None Include="wwwroot\Img\etd_menu.png" />
+    <None Include="wwwroot\Img\etd_start.png" />
+    <None Include="wwwroot\Img\exlamation.png" />
+    <None Include="wwwroot\Img\facebook.png" />
+    <None Include="wwwroot\Img\facebook2.png" />
+    <None Include="wwwroot\Img\instagram.png" />
+    <None Include="wwwroot\Img\linkedin.png" />
+    <None Include="wwwroot\Img\percent.png" />
+    <None Include="wwwroot\Img\pound.png" />
+    <None Include="wwwroot\Img\Screenshot_20221107_092334.png" />
+    <None Include="wwwroot\Img\smileyface.png" />
+    <None Include="wwwroot\Img\smileyface2.png" />
+    <None Include="wwwroot\Img\smileyface_navbar.png" />
+    <None Include="wwwroot\Img\spaceinvaders_death.png" />
+    <None Include="wwwroot\Img\spaceinvaders_enemyexplode.png" />
+    <None Include="wwwroot\Img\spaceinvaders_shoot.png" />
+    <None Include="wwwroot\Img\spaceinvaders_start.png" />
+    <None Include="wwwroot\Img\tictactoe_gameplay.png" />
+    <None Include="wwwroot\Img\tictactoe_start.png" />
+    <None Include="wwwroot\Img\tictactoe_windiag.png" />
+    <None Include="wwwroot\Img\tictactoe_winhorz.png" />
+    <None Include="wwwroot\Img\tilepuzzle_gameplay.png" />
+    <None Include="wwwroot\Img\tilepuzzle_instructions.png" />
+    <None Include="wwwroot\Img\tilepuzzle_keyboard.png" />
+    <None Include="wwwroot\Img\tilepuzzle_leaderboard.png" />
+    <None Include="wwwroot\Img\wordscramble_correctchoice.png" />
+    <None Include="wwwroot\Img\wordscramble_gameplay.png" />
+    <None Include="wwwroot\Img\wordscramble_instructions.png" />
+    <None Include="wwwroot\Img\wordscramble_victory.png" />
+    <None Include="wwwroot\Img\wordscramble_wrongchoice.png" />
+    <None Include="wwwroot\Img\youtube.png" />
+  </ItemGroup>
+
+</Project>

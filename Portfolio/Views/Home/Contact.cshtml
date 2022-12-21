@@ -1,0 +1,69 @@
+﻿@model Portfolio.Models.ContactModel
+
+@{
+    ViewData["Title"] = "Contact";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's contact page.</p>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <body>
+        <div class="jumbotron2" >
+            <h2>Contact us directly</h2>
+            <h3 style="text-align: center">Have any questions or want to work together?</h3>
+            <address style="text-align: center">
+                28277 N. Desert Ntive St<br />
+                San Tan Valley, AZ 85143<br />
+                <abbr title="Phone">P:</abbr>
+                774.454.6688
+            </address>
+            <address style="text-align: center">
+                <strong>Support: </strong><a href="mailto:jeremiahmiranda79@gmail.com">JeremiahMiranda79.gmail.com</a><br />
+                <strong>Marketing: </strong><a href="mailto:Marketing@example.com">Marketing@example.com</a>
+            </address>
+        </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <h4>Send your comments.</h4>
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.FromName, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.FromName)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.FromEmail)
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Message, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextAreaFor(m => m.Message, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Message)
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Send" />
+            </div>
+        </div>
+    }
+
+    @*@section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }*@
+
+    </body>
+
+
+</html>
+

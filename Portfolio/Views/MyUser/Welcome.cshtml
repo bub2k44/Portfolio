@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Bootstrap </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h2>Welcome To High Scores</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        High Scores
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        @ViewData["Message0.0"]
+                    </td>
+                    <td>
+                        @ViewData["Message0.1"]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @ViewData["Message1.0"]
+                    </td>
+
+                    <td>
+                        @ViewData["Message1.1"]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @ViewData["Message2.0"]
+                    </td>
+                    <td>
+                        @ViewData["Message2.1"]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @ViewData["Message3.0"]
+                    </td>
+                    <td>
+                        @ViewData["Message3.1"]
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @ViewData["Message4.0"]
+                    </td>
+                    <td>
+                        @ViewData["Message4.1"]
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
