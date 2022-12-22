@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Welcome";
+    ViewData["Title"] = "Index";
 }
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@
             <thead>
                 <tr>
                     <th>
-                        High Scores
+                        Tile Puzzle High Scores
                     </th>
                     <th></th>
                 </tr>
@@ -64,5 +64,13 @@
                 </tr>
             </tbody>
         </table>
+
+    @*<ul>
+        @foreach(var score in ViewData["myScores"] as IList<int>)
+        <li>
+            @score.dataScores
+        </li>
+    </ul>*@
+
     </body>
 </html>

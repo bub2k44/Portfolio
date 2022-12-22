@@ -3,20 +3,20 @@ using Microsoft.Data.SqlClient;
 
 namespace Portfolio.Controllers
 {
-    public class MyUserController : Controller
+    public class HighScore : Controller
     {
-        string connection = 
-            @"Data Source = 192.168.14.210;
+        string connection =
+            @"Data Source = 192.168.0.35;
             user Id = sa;
-            password = Newbaby321!;
+            password = Password321!;
             Initial Catalog = PortfolioGame;";
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
 
-        public IActionResult Welcome()
+        public IActionResult Index()
         {
             ViewDataStuffer();
             ViewDataStuffer2();
@@ -27,7 +27,7 @@ namespace Portfolio.Controllers
         {
             try
             {
-                List<int> dataScores = new List<int>();
+                IList<int> dataScores = new List<int>();
                 string connectionString = connection;
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
@@ -50,6 +50,9 @@ namespace Portfolio.Controllers
                     ViewData["Message2.0"] = dataScores[2];
                     ViewData["Message3.0"] = dataScores[3];
                     ViewData["Message4.0"] = dataScores[4];
+
+                    //ViewData["myScores"] = dataScores;
+
                     connection.Close();
                 }
             }
@@ -69,7 +72,7 @@ namespace Portfolio.Controllers
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     SqlCommand cmd2 = new SqlCommand(
-                        "Select Top 5 PlayerFirstName From MyUser " +
+                        "Select Top 5 PlayerName From MyUser " +
                         "Where PlayerScore " +
                         "In (Select PlayerScore) " +
                         "Order By PlayerScore Desc;", connection);
@@ -78,7 +81,7 @@ namespace Portfolio.Controllers
 
                     while (sdr2.Read())
                     {
-                        dataFirstNames.Add(sdr2["PlayerFirstName"].ToString());
+                        dataFirstNames.Add(sdr2["PlayerName"].ToString());
                     }
 
                     ViewData["Message0.1"] = dataFirstNames[0];

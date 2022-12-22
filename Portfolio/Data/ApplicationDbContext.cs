@@ -12,7 +12,5 @@ namespace Portfolio.Data
         }
 
         public DbSet<Portfolio.Models.Joke> Joke { get; set; }
-
-        public DbSet<Portfolio.Models.HighScore> HighScore { get; set; }
     }
 }
