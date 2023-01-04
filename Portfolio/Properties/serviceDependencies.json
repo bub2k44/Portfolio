@@ -10,7 +10,8 @@
     },
     "mssql3": {
       "type": "mssql",
-      "connectionId": "ConnectionStrings:PortfolioContext"
+      "connectionId": "ConnectionStrings:PortfolioContext",
+      "dynamicId": null
     }
   }
 }

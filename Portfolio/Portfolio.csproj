@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-Portfolio-7de19f34-6311-4a26-a6dd-1422906133e5</UserSecretsId>
+    <TypeScriptModuleKind>none</TypeScriptModuleKind>
   </PropertyGroup>
 
   <ItemGroup>

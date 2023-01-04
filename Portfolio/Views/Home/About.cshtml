@@ -1,76 +1,360 @@
 ﻿@{
     ViewData["Title"] = "About";
 }
-<h1>@ViewData["Title"]</h1>
-
-<p>Use this page to detail your site's privacy policy.</p>
 
 <!DOCTYPE html>
 <html lang="en">
-<body>
-    <div class="jumbotron2">
-        <div class="container">
-            <p class="lead">
-                <h2>We use current technologies</h2>
-                <p>We make sure that your system is always <strong>FAST</strong>. With a strong <strong>UNDER-LINE</strong> for all device types. More <strong>CONTROL</strong> over your applications. While beaing able to <strong>KEEP</strong> things the way you want want them!</p>
-                <p>In this example we are using cards with image, title, and text.  Lets take a look at what we used to create this project.</p>
-                <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
+    <body>
+        <h1><strong>@ViewData["Title"]</strong></h1>
+        <hr class="my-4">
+        <h3>Check out how my systems are built!</h3>
 
-            <div class="text-center">
-                <div class="row">
-                    <div class="col">
-                        <div class="card bg-dark">
-                            <img class="card-img-top" src="~/Img/smileyface.png" alt="Card image cap">
-                            <div class="card-body text-center">
-                                <p class="card-text"><strong>.NET</strong></p>
-                                <p class="card-text">We used .NET Core Framework to have compatibility for all operating systems and devices.</p>
-                            </div>
+        <div class="container-fluid p-5 jumbotron2">
+            <div class="container">
+                <p class="lead">
+                    <h2>Technologies used to create this application</h2>
+                    <hr class="my-4">
+                    <h5>
+                        I seperated the technologies that have been used for one or more applications show-cased here into three secions.  
+                        Programing languages, Frameworks and Engines, or Services and Tools.
+                        Please browse through my skills in each section.
+                    </h5>
+                <hr class="my-4">
+                    <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>                        
+            </div>
+        </div>
 
-                        </div>
+        <h2><strong>Programing Languages</strong></h2>
+        <hr class="my-4">
+        <div id="programminLanguages" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
 
-                    </div>
-                    
-                    <div class ="col">
-                        <div class="card bg-dark">
-                            <img class="card-img-top" src="~/Img/smileyface.png" alt="Card image cap">
-                            <div class="card-body text-center">
-                                <p class="card-text"><strong>ASP</strong></p>
-                                <p class="card-text">ASP was used for web development to produce dynamic web pages.</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="card bg-dark">
-                            <img class="card-img-top" src="~/Img/smileyface.png" alt="Card image cap">
-                            <div class="card-body text-center">
-                                <p class="card-text"><strong>MS SQL Server</strong></p>
-                                <p class="card-text">I chose TSQL with MS SQL Server to easily connect databases and keep the stack fully Microsoft.</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col">
-                        <div class="card bg-dark">
-                        <img class="card-img-top" src="~/Img/smileyface.png" alt="Card image cap">
-                            <div class="card-body text-center">
-                                <p class="card-text"><strong>Entity/Identity</strong></p>
-                                <p class="card-text">Using the Entity and Identity frameworks lets us keep things simple and secure.</p>
+                        <div class="card card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Transact-SQL</h5>
+                                <p class="card-text text-white">
+                                    T-SQL expands on SQL(Structured Query Language) to interact with relational databases. Standard to include procedural
+                                    programming, local variables, various support functions for string processing, date processing, mathematics, etc.
+                                    and changes to the DELETE and UPDATE statements.
+                                    <br />
+                                    <br />
+                                </p>
+                                <a href="https://learn.microsoft.com/en-us/sql/t-sql/language-reference?view=sql-server-ver16" class="btn btn-primary">Learn More</a>
                             </div>
                         </div>
 
-                    </div>
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">JavaScript</h5>
+                                <p class="card-text text-white">
+                                    JS is a high level scripting language that enables you to create dynamically updating content, control multimedia, animate images,
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                </p>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
 
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">C# Language</h5>
+                                <p class="card-text text-white">
+                                    C# is a simple, modern, general-purpose, object-oriented programming language.
+                                    Implementations thereof, should provide support for software engineering principles such as strong 
+                                    type checking, array bounds checking, detection of attempts to use uninitialized variables, and automatic garbage collection.
+                                </p>
+                                <a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/language-specification/introduction" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
 
-            </div>
-            
-        </div>
-    </div>
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">HTML</h5>
+                                <p class="card-text text-white">
+                                    HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visual or audible web pages. Default characteristics for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by the web page designer's additional use of CSS.
+                                    <br />
+                                </p>
+                                <a href="https://www.w3schools.com/whatis/whatis_html.asp#:~:text=HTML%20stands%20for%20Hyper%20Text%20Markup%20Language.%20HTML,pages.%20HTML%20elements%20are%20represented%20by%20%3C%3E%20tags" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
 
-</body>
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">BootStrap</h5>
+                                <p class="card-text text-white">
+                                    a free and open-source web development framework. It’s designed to ease the web development process of responsive, mobile-first websites by providing a collection of syntax for template designs.
+                                    <br />
+                                    <br />
+                                    <br />
+                                </p>
+                                <a href="https://www.hostinger.com/tutorials/what-is-bootstrap/" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">CSS</h5>
+                                <p class="card-text text-white">
+                                    CSS (Cascading Style Sheets). A language used to describe the look and formatting of a document written in markup language. Used along with HTML and JavaScript to provided additional features. It is generally used to change the style of web pages and user interfaces. It can also be used with any kind of XML documents including plain XML, SVG and XUL.
+                                    <br />
+                                </p>
+                                <a href="https://www.javatpoint.com/what-is-css" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                     
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#programminLanguages" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#programminLanguages" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <hr class="my-4">
+
+        <h2><strong>Frameworks and Engines</strong></h2>
+        <hr class="my-4">
+        <div id="frameworksAndEngines" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+
+                        <div class="card card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">.NET Core</h5>
+                                <p class="card-text text-white">
+                                    .NET Core is a cross platform open source framework for building
+                                    many kinds of high-performance runtime high-scale applications.
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                </p>
+                                <a href="https://learn.microsoft.com/en-us/dotnet/core/introduction" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">APS.NET</h5>
+                                <p class="card-text text-white">
+                                    ASP.NET is a free web framework for building great websites and web applications using
+                                    HTML, CSS, and JavaScript. You can also create Web APIs and use real-time technologies like Web Sockets.
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                </p>
+                                <a href="https://learn.microsoft.com/en-us/aspnet/overview" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">ADO.NET Entity Framework</h5>
+                                <p class="card-text text-white">
+                                    A set of technologies that support the development of data-oriented software applications.
+                                    This enables developers to work with data in the form of domain-specific objects and properties for
+                                    higher level of abstraction when they deal with data, and can create and maintain data-oriented applications with less code than in traditional applications.
+                                </p>
+                                <a href="https://learn.microsoft.com/en-us/dotnet/framework/data/adonet/ef/overview" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Identity Framework for ASP.NET Core</h5>
+                                <p class="card-text text-white">
+                                    API that supports user interface login functionality.
+                                    Manages users, passwords, profile data, roles, claims, tokens, email confirmation, and more.
+                                    Users can create an account with the login information stored in Identity or they can use an external login provider.
+                                    Login providers, Facebook, Google, Microsoft Account, and Twitter.
+                                    <br />
+                                </p>
+                                <a href="https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-7.0&tabs=visual-studio" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Razor Pages for ASP.NET Core</h5>
+                                <p class="card-text text-white">
+                                    Server-side, page-focused framework for dynamic, data-driven apps with clean separation of concerns.
+                                    Full control over rendered HTML and cross-platform server-side HTML generation.
+                                    Use of the C# programming language for server-side programming, and embedding C# in HTML mark-up to generate content for browsers dynamically.
+                                </p>
+                                <a href="https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-7.0&tabs=visual-studio" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Unity</h5>
+                                <p class="card-text text-white">
+                                    A cross-platform game engine used to create three-dimensional (3D) and two-dimensional (2D) games, as well as interactive simulations and other experiences. The engine has been adopted by industries outside video gaming, such as film, automotive, architecture, engineering, construction, and the United States Armed Forces.
+                                    <br />
+                                </p>
+                                <a href="https://unity.com/" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                     
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#frameworksAndEngines" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#frameworksAndEngines" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <hr class="my-4">
+
+        <h2><strong>Services and Tools</strong></h2>
+        <hr class="my-4">
+        <div id="toolsAndServices" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+
+                        <div class="card card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Visual Studios 2022</h5>
+                                <p class="card-text text-white">
+                                    The Visual Studio IDE is a creative launching pad that you can use to edit, debug, and build code,
+                                    and then publish an app. Over and above the standard editor and debugger that most IDEs provide,
+                                    Visual Studio includes compilers, code completion tools, graphical designers, and many more features
+                                    to enhance the software development process.
+                                </p>
+                                <a href="https://visualstudio.microsoft.com/" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">MS SQL Server</h5>
+                                <p class="card-text text-white">
+                                    A relational database management system or server for storing and retrieving data as requested by other software applications—which may run either on the same computer or on another computer across a network.
+                                    Workloads ranging from small single-machine applications to large Internet-facing applications with many concurrent users.
+                                </p>
+                                <a href="https://www.microsoft.com/en-us/sql-server/sql-server-2019" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Apache</h5>
+                                <p class="card-text text-white">
+                                    Apache HTTP Server is a free and open-source cross-platform web server software, released under the terms of Apache License 2.0.
+                                    Apache HTTP Server instances run on a Linux distribution, but current versions also run on Microsoft Windows, OpenVMS, and a wide variety of Unix-like systems.
+                                    <br />
+                                    <br />
+                                </p>
+                                <a href="https://httpd.apache.org/download.cgi" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="cards-wrapper">
+                        <div class="card card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">IIS</h5>
+                                <p class="card-text text-white">
+                                    Web Server (IIS) provides a secure, easy-to-manage, modular and extensible platform for hosting websites, services, and applications. Share information with users on the Internet, an intranet, or an extranet. IIS 8 is a unified web platform that integrates IIS, ASP.NET, FTP services, PHP, and Windows Communication Foundation (WCF).
+                                    <br />
+                                </p>
+                                <a href="https://learn.microsoft.com/en-us/iis/get-started/introduction-to-iis/iis-web-server-overview" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Azure</h5>
+                                <p class="card-text text-white">
+                                    A cloud computing platform operated by Microsoft for application management via around the world-distributed data centers. Microsoft Azure has capabilities such as software as a service (SaaS), platform as a service (PaaS) and infrastructure as a service (IaaS) and supports many programming languages, tools, and frameworks.
+                                    <br />
+                                </p>
+                                <a href="https://azure.microsoft.com/en-us/free/cloud-services/search/?OCID=AIDcmm5edswduu_SEM_158eee60158c139a8b418dd4a06e9047:G:s&ef_id=158eee60158c139a8b418dd4a06e9047:G:s&msclkid=158eee60158c139a8b418dd4a06e9047" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                        <div class="card d-none d-md-block card bg-dark">
+                            <img src="~/Img/smileyface.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-white">Git</h5>
+                                <p class="card-text text-white">
+                                    Git is a distributed version control system, which means that a local clone of the project is a complete version control repository. These fully functional local repositories make it easy to work offline or remotely. Developers commit their work locally, and then sync their copy of the repository with the copy on the server.
+                                    <br />
+                                </p>
+                                <a href="https://learn.microsoft.com/en-us/devops/develop/git/what-is-git" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>                     
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#toolsAndServices" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#toolsAndServices" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        
+        </div>
+        <hr class="my-4">
+    </body>
 </html>
 

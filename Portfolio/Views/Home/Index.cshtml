@@ -1,19 +1,37 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Portfolio";
 }
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title> Bootstrap </title>
+		<title>@ViewData["Title"]</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
+
 	<body>
+		<h1><strong>@ViewData["Title"]</strong></h1>
+		<hr class="my-4">
+		<h3>Welcome to my digital portfolio. Please browse, and interact with my work!</h3>
+
 		<div class="container-fluid p-5 jumbotron2">
-			<h1 class="display-4">Welcome to my portfolio</h1>
-			<p class="lead">This application is designed to display my resume with user interaction involvment.</p>
+			<h1 class="display-4"><b>Digital Portfolio</b></h1>
 			<hr class="my-4">
-			<p>Find out how we can build your solution! Here at SmileyFaceStudios.Kelper, we build great Web sites and Web applications to fit all kinds of use cases.  Find out how we can fit your needs by selecting the "learn more", button below!</p>
+				<p>
+					Hello, my name is Jeremiah Miranda and I am a professional software engineer looking to expand my skillset while working with others, in a supportive and professional enviornment.
+					After graduating from DeVry University with a bachelor's degree in Computer Information Systems and a specialization in software development, I have been a non-stop self-study, throwing myself into project after project to develop skills I felt I was lacking.
+					I designed this application to allow you to easily scan through and interact with my digital portfolio.
+					You will find a variety of the tools, services, program languages, databases, and engines that I have become proficient in and utilize most often to build my resume.											
+				</p>
+
+			<hr class="my-4">
+				<p>
+					Now that we are aquainted, I should let you know more about my style. I have been a fan of microsoft stack since about MS DOS. 
+					I was a young man trying to learn from the mid pages of Compute Magazine, attempting to expand on the Extended Basic code langugage to build/modify mini games on a TI-99 4a. Using GoTo lines for logic and low level languages of the times, plus no internet docx.  I was feeling like i needed a break, and then spent 25 great years in a great career as an Execcutive chef. Here we are now, fast forward to now, I am back at it and will stay current with updated tech and news. I am still on the path of MicroSoft stacks as you will see in my skills page.    
+				</p>
+
+			<hr class="my-4">
 			<a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
 		</div>
 	</body>

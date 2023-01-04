@@ -1,76 +1,46 @@
-﻿@{
-    ViewData["Title"] = "Index";
-}
+﻿@model IEnumerable<Portfolio.Models.HighScoreModel>
 
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title> Bootstrap </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <h2>Welcome To High Scores</h2>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>
-                        Tile Puzzle High Scores
-                    </th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        @ViewData["Message0.0"]
-                    </td>
-                    <td>
-                        @ViewData["Message0.1"]
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        @ViewData["Message1.0"]
-                    </td>
-
-                    <td>
-                        @ViewData["Message1.1"]
-                    </td>
-                </tr>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <h1>@ViewData["Header"]</h1>
+    @{
+        var highScoreModel = ViewData["HighScoreModel"]
+            as Portfolio.Models.HighScoreModel;
+    }
+    <table class="table table-bordered table-striped">
+        @* 
+            What it needs is a definitive width and height.
+            Change the width and height
+        *@
+        <thead>
+            <tr>
+                <th>
+                    Scores
+                </th>
+                <th>
+                    Names
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in ViewData["HighScoreModel"] as IList<HighScoreModel>)
+        {           
                 <tr>
                     <td>
-                        @ViewData["Message2.0"]
+                        @item.PlayerScore
                     </td>
                     <td>
-                        @ViewData["Message2.1"]
+                        @item.PlayerName
                     </td>
-                </tr>
-                <tr>
-                    <td>
-                        @ViewData["Message3.0"]
-                    </td>
-                    <td>
-                        @ViewData["Message3.1"]
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        @ViewData["Message4.0"]
-                    </td>
-                    <td>
-                        @ViewData["Message4.1"]
-                    </td>
-                </tr>
+                </tr>            
+            
+        }
             </tbody>
-        </table>
-
-    @*<ul>
-        @foreach(var score in ViewData["myScores"] as IList<int>)
-        <li>
-            @score.dataScores
-        </li>
-    </ul>*@
-
-    </body>
+    </table>
+</body>
 </html>

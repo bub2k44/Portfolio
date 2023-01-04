@@ -3,67 +3,68 @@
 @{
     ViewData["Title"] = "Contact";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's contact page.</p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>@ViewData["Title"]</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
-    <!DOCTYPE html>
-    <html lang="en">
     <body>
-        <div class="jumbotron2" >
-            <h2>Contact us directly</h2>
-            <h3 style="text-align: center">Have any questions or want to work together?</h3>
-            <address style="text-align: center">
-                28277 N. Desert Ntive St<br />
+        <h1><strong>@ViewData["Title"]</strong></h1>
+        <hr class="my-4">
+        <h3>Have any questions or want to work together?</h3>
+
+        <div class="container-fluid p-5 jumbotron2">
+            <h3>Contact me directly</h3>
+            <hr class="my-4">
+            <address>
+                28277 N. Desert Native St<br />
                 San Tan Valley, AZ 85143<br />
-                <abbr title="Phone">P:</abbr>
-                774.454.6688
-            </address>
-            <address style="text-align: center">
-                <strong>Support: </strong><a href="mailto:jeremiahmiranda79@gmail.com">JeremiahMiranda79.gmail.com</a><br />
-                <strong>Marketing: </strong><a href="mailto:Marketing@example.com">Marketing@example.com</a>
+                <strong><abbr title="Phone">P:</abbr></strong>
+                774.454.6688<br/>
+                <strong><abbr title="Email">E:</abbr></strong>
+                <a href="mailto:jeremiahmiranda79@gmail.com">JeremiahMiranda79.gmail.com</a><br />  
             </address>
         </div>
 
     @using (Html.BeginForm())
     {
         @Html.AntiForgeryToken()
-        <h4>Send your comments.</h4>
-        <hr />
-        <div class="form-group">
-            @Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
-            <div class="col-md-10">
-                @Html.TextBoxFor(m => m.FromName, new { @class = "form-control" })
-                @Html.ValidationMessageFor(m => m.FromName)
+        <div class="container-fluid p-5 jumbotron2">
+            <h3>Send me a message</h3>
+            <hr />
+            <div class="form-group">
+                @Html.LabelFor(m => m.FromName, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.FromName, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.FromName)
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
-            <div class="col-md-10">
-                @Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control" })
-                @Html.ValidationMessageFor(m => m.FromEmail)
+            <div class="form-group">
+                @Html.LabelFor(m => m.FromEmail, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextBoxFor(m => m.FromEmail, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.FromEmail)
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            @Html.LabelFor(m => m.Message, new { @class = "col-md-2 control-label" })
-            <div class="col-md-10">
-                @Html.TextAreaFor(m => m.Message, new { @class = "form-control" })
-                @Html.ValidationMessageFor(m => m.Message)
+            <div class="form-group">
+                @Html.LabelFor(m => m.Message, new { @class = "col-md-2 control-label" })
+                <div class="col-md-10">
+                    @Html.TextAreaFor(m => m.Message, new { @class = "form-control" })
+                    @Html.ValidationMessageFor(m => m.Message)
+                </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-offset-2 col-md-10">
-                <input type="submit" class="btn btn-default" value="Send" />
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <br/>
+                    <input type="submit" class="btn btn-primary" value="Send" />
+                </div>
             </div>
         </div>
     }
-
-    @*@section Scripts {
-        @Scripts.Render("~/bundles/jqueryval")
-    }*@
-
     </body>
-
-
 </html>
 
